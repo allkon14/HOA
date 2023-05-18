@@ -1,0 +1,15 @@
+C:\Users\Алёна\source\repos\dbHOA\bin\Debug\dbHOA.exe.config
+C:\Users\Алёна\source\repos\dbHOA\bin\Debug\dbHOA.exe
+C:\Users\Алёна\source\repos\dbHOA\bin\Debug\dbHOA.pdb
+C:\Users\Алёна\source\repos\dbHOA\obj\Debug\dbHOA.csproj.AssemblyReference.cache
+C:\Users\Алёна\source\repos\dbHOA\obj\Debug\dbHOA.Form1.resources
+C:\Users\Алёна\source\repos\dbHOA\obj\Debug\dbHOA.Login.resources
+C:\Users\Алёна\source\repos\dbHOA\obj\Debug\dbHOA.Properties.Resources.resources
+C:\Users\Алёна\source\repos\dbHOA\obj\Debug\dbHOA.csproj.GenerateResource.cache
+C:\Users\Алёна\source\repos\dbHOA\obj\Debug\dbHOA.csproj.CoreCompileInputs.cache
+C:\Users\Алёна\source\repos\dbHOA\obj\Debug\dbHOA.exe
+C:\Users\Алёна\source\repos\dbHOA\obj\Debug\dbHOA.pdb
+C:\Users\Алёна\source\repos\dbHOA\obj\Debug\dbHOA.MainForm.resources
+C:\Users\Алёна\source\repos\dbHOA\obj\Debug\dbHOA.AdminForm.resources
+C:\Users\Алёна\source\repos\dbHOA\obj\Debug\dbHOA.Add_Form.resources
+C:\Users\Алёна\source\repos\dbHOA\obj\Debug\dbHOA.Add_payment.resources
