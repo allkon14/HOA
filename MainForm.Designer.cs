@@ -55,6 +55,8 @@ namespace dbHOA
             this.add_ser_btn = new System.Windows.Forms.Button();
             this.dgv_Service = new System.Windows.Forms.DataGridView();
             this.apartmentTableAdapter1 = new dbHOA.HOADataSetTableAdapters.ApartmentTableAdapter();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Readings_meter)).BeginInit();
             this.View_Meter.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -66,12 +68,14 @@ namespace dbHOA
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Meter_for_Tenant)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Service)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgv_Readings_meter
             // 
             this.dgv_Readings_meter.AllowUserToAddRows = false;
             this.dgv_Readings_meter.AllowUserToDeleteRows = false;
+            this.dgv_Readings_meter.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Readings_meter.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Readings_meter.Location = new System.Drawing.Point(6, 129);
             this.dgv_Readings_meter.Name = "dgv_Readings_meter";
@@ -283,6 +287,8 @@ namespace dbHOA
             // 
             this.dgv_Meter_for_Tenant.AllowUserToAddRows = false;
             this.dgv_Meter_for_Tenant.AllowUserToDeleteRows = false;
+            this.dgv_Meter_for_Tenant.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_Meter_for_Tenant.BackgroundColor = System.Drawing.Color.Silver;
             this.dgv_Meter_for_Tenant.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Meter_for_Tenant.Location = new System.Drawing.Point(27, 115);
             this.dgv_Meter_for_Tenant.Name = "dgv_Meter_for_Tenant";
@@ -295,6 +301,7 @@ namespace dbHOA
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.panel3);
             this.tabPage3.Controls.Add(this.add_ser_btn);
             this.tabPage3.Controls.Add(this.dgv_Service);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
@@ -307,6 +314,7 @@ namespace dbHOA
             // 
             // add_ser_btn
             // 
+            this.add_ser_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.add_ser_btn.Location = new System.Drawing.Point(595, 552);
             this.add_ser_btn.Name = "add_ser_btn";
             this.add_ser_btn.Size = new System.Drawing.Size(266, 115);
@@ -319,6 +327,7 @@ namespace dbHOA
             // 
             this.dgv_Service.AllowUserToAddRows = false;
             this.dgv_Service.AllowUserToDeleteRows = false;
+            this.dgv_Service.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Service.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Service.Location = new System.Drawing.Point(10, 215);
             this.dgv_Service.Name = "dgv_Service";
@@ -331,6 +340,25 @@ namespace dbHOA
             // apartmentTableAdapter1
             // 
             this.apartmentTableAdapter1.ClearBeforeFill = true;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Silver;
+            this.panel3.Controls.Add(this.label7);
+            this.panel3.Location = new System.Drawing.Point(10, 24);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1407, 75);
+            this.panel3.TabIndex = 8;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.label7.Location = new System.Drawing.Point(24, 17);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(452, 36);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Просмотр оплаты за услуги";
             // 
             // MainForm
             // 
@@ -354,6 +382,8 @@ namespace dbHOA
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Meter_for_Tenant)).EndInit();
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Service)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -384,5 +414,7 @@ namespace dbHOA
         private System.Windows.Forms.DataGridView dgv_Service;
         private HOADataSetTableAdapters.ApartmentTableAdapter apartmentTableAdapter1;
         private System.Windows.Forms.Button add_ser_btn;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label7;
     }
 }

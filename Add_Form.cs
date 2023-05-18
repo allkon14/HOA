@@ -96,5 +96,10 @@ namespace dbHOA
             dateTimePicker1.Value = Data.last_date;
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

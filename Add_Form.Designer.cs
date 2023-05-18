@@ -37,6 +37,9 @@ namespace dbHOA
             this.Reading_textbox = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.Save_btn = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.erase_pic)).BeginInit();
             this.SuspendLayout();
@@ -74,42 +77,81 @@ namespace dbHOA
             // 
             // Meter_id_textbox
             // 
-            this.Meter_id_textbox.Location = new System.Drawing.Point(329, 194);
+            this.Meter_id_textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.Meter_id_textbox.Location = new System.Drawing.Point(388, 188);
             this.Meter_id_textbox.Name = "Meter_id_textbox";
-            this.Meter_id_textbox.Size = new System.Drawing.Size(100, 22);
+            this.Meter_id_textbox.Size = new System.Drawing.Size(100, 30);
             this.Meter_id_textbox.TabIndex = 1;
             // 
             // Reading_textbox
             // 
-            this.Reading_textbox.Location = new System.Drawing.Point(329, 237);
+            this.Reading_textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.Reading_textbox.Location = new System.Drawing.Point(388, 236);
             this.Reading_textbox.Name = "Reading_textbox";
-            this.Reading_textbox.Size = new System.Drawing.Size(100, 22);
+            this.Reading_textbox.Size = new System.Drawing.Size(100, 30);
             this.Reading_textbox.TabIndex = 2;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(329, 283);
+            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dateTimePicker1.Location = new System.Drawing.Point(388, 283);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(169, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(229, 30);
             this.dateTimePicker1.TabIndex = 4;
             this.dateTimePicker1.Value = new System.DateTime(2023, 5, 16, 0, 0, 0, 0);
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // Save_btn
             // 
-            this.Save_btn.Location = new System.Drawing.Point(577, 356);
+            this.Save_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.Save_btn.Location = new System.Drawing.Point(522, 356);
             this.Save_btn.Name = "Save_btn";
-            this.Save_btn.Size = new System.Drawing.Size(75, 23);
+            this.Save_btn.Size = new System.Drawing.Size(164, 57);
             this.Save_btn.TabIndex = 5;
-            this.Save_btn.Text = "button1";
+            this.Save_btn.Text = "Сохранить";
             this.Save_btn.UseVisualStyleBackColor = true;
             this.Save_btn.Click += new System.EventHandler(this.Save_btn_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.label2.Location = new System.Drawing.Point(110, 185);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(118, 31);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Счетчик";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label3.Location = new System.Drawing.Point(111, 237);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(139, 29);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Показание";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label4.Location = new System.Drawing.Point(111, 283);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(271, 29);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Дата сдачи показания";
             // 
             // Add_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.Save_btn);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.Reading_textbox);
@@ -135,5 +177,8 @@ namespace dbHOA
         private System.Windows.Forms.TextBox Reading_textbox;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button Save_btn;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
