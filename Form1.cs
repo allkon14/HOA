@@ -21,5 +21,12 @@ namespace dbHOA
         {
 
         }
+
+        private void info_pic_Click(object sender, EventArgs e)
+        {
+            ToolTip t = new ToolTip();
+            t.SetToolTip(info_pic, "Подсказка для TextBox");
+
+        }
     }
 }

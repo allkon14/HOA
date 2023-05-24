@@ -33,17 +33,27 @@ namespace dbHOA
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.add_pic = new System.Windows.Forms.PictureBox();
+            this.search_textbox = new System.Windows.Forms.TextBox();
+            this.add_textbox = new System.Windows.Forms.TextBox();
+            this.info_pic = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.add_pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.info_pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBox1
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 12);
+            this.comboBox1.Location = new System.Drawing.Point(12, 16);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(294, 37);
+            this.comboBox1.Size = new System.Drawing.Size(294, 33);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -75,11 +85,78 @@ namespace dbHOA
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // add_pic
+            // 
+            this.add_pic.Image = ((System.Drawing.Image)(resources.GetObject("add_pic.Image")));
+            this.add_pic.Location = new System.Drawing.Point(672, 528);
+            this.add_pic.Name = "add_pic";
+            this.add_pic.Size = new System.Drawing.Size(55, 54);
+            this.add_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.add_pic.TabIndex = 3;
+            this.add_pic.TabStop = false;
+            this.add_pic.Click += new System.EventHandler(this.add_pic_Click);
+            // 
+            // search_textbox
+            // 
+            this.search_textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.search_textbox.Location = new System.Drawing.Point(483, 19);
+            this.search_textbox.Name = "search_textbox";
+            this.search_textbox.Size = new System.Drawing.Size(219, 30);
+            this.search_textbox.TabIndex = 4;
+            this.search_textbox.TextChanged += new System.EventHandler(this.search_textbox_TextChanged);
+            // 
+            // add_textbox
+            // 
+            this.add_textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.add_textbox.Location = new System.Drawing.Point(28, 528);
+            this.add_textbox.Name = "add_textbox";
+            this.add_textbox.Size = new System.Drawing.Size(426, 38);
+            this.add_textbox.TabIndex = 5;
+            // 
+            // info_pic
+            // 
+            this.info_pic.Image = ((System.Drawing.Image)(resources.GetObject("info_pic.Image")));
+            this.info_pic.Location = new System.Drawing.Point(550, 528);
+            this.info_pic.Name = "info_pic";
+            this.info_pic.Size = new System.Drawing.Size(59, 54);
+            this.info_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.info_pic.TabIndex = 6;
+            this.info_pic.TabStop = false;
+            this.info_pic.Click += new System.EventHandler(this.info_pic_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(402, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(52, 54);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(728, 16);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(50, 45);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 642);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.info_pic);
+            this.Controls.Add(this.add_textbox);
+            this.Controls.Add(this.search_textbox);
+            this.Controls.Add(this.add_pic);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.comboBox1);
@@ -88,7 +165,12 @@ namespace dbHOA
             this.Load += new System.EventHandler(this.AdminForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.add_pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.info_pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -97,5 +179,11 @@ namespace dbHOA
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox add_pic;
+        private System.Windows.Forms.TextBox search_textbox;
+        private System.Windows.Forms.TextBox add_textbox;
+        private System.Windows.Forms.PictureBox info_pic;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
